@@ -1,43 +1,90 @@
-# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+metro-debug.log
 
-# dependencies
+# React Native / Node
 node_modules/
+package-lock.json
+yarn.lock
 
-# Expo
-.expo/
-dist/
-web-build/
-expo-env.d.ts
+# Babel
+*.babelrc
+*.babel.json
 
-# Native
-.kotlin/
-*.orig.*
-*.jks
-*.p8
-*.p12
-*.key
-*.mobileprovision
+# Android
+/android/.gradle/
+/android/app/build/
+/android/build/
+/android/.idea/
+/android/local.properties
+/android/app/debug.keystore
+*.iml
 
-# Metro
-.metro-health-check*
+# Gradle
+.gradle/
+build/
+gradle-app.setting
 
-# debug
-npm-debug.*
-yarn-debug.*
-yarn-error.*
+# iOS
+/ios/Pods/
+/ios/build/
+/ios/DerivedData/
+/ios/*.xcuserdata
+*.xcuserstate
+*.xcworkspace
+*.xcconfig
+*.pbxuser
+*.mode1v3
+*.mode2v3
 
-# macOS
+# Xcode
 .DS_Store
-*.pem
+*.swp
+*.xccheckout
+*.xccheckout
+*.moved-aside
+*.xcscmblueprint
 
-# local env files
-.env*.local
+# App Bundles
+*.apk
+*.aab
+*.ipa
 
-# typescript
+# Buck
+.buckconfig.local
+.buckd/
+*.buckd
+
+# Watchman
+.watchmanconfig
+
+# TypeScript
 *.tsbuildinfo
 
-app-example
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
 
-# generated native folders
-/ios
-/android
+# VSCode
+.vscode/
+
+# Env files
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Temporary files
+tmp/
+temp/
+
+#Expo 
+.expo/
+.expo-shared/
